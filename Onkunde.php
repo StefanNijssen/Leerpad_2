@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <form method="post" action="PaniekResultaat.php">
+    <form method="post" action="OnkundeResultaat.php">
     
         <h1>Er heerst paniek!</h1>
         <!-- Formuliervelden hier -->

@@ -8,16 +8,50 @@
 <body>
     <?php
     
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-       
-        $Vraag1 = $_POST['Vraag1'];
-        $Vraag2 = $_POST['Vraag2'];
-        $Vraag3 = $_POST['Vraag3'];
-        $Vraag4 = $_POST['Vraag4'];
-        $Vraag5 = $_POST['Vraag5'];
-        $Vraag6 = $_POST['Vraag6'];
-        $Vraag7 = $_POST['Vraag7'];
-        $Vraag8 = $_POST['Vraag8'];
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+		// Define an array to store errors
+		$errors = array();
+		
+		// Validate the input for each question
+		if (empty($_POST['Vraag1'])) {
+		  $errors['Vraag1'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		if (empty($_POST['Vraag2'])) {
+		  $errors['Vraag2'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		if (empty($_POST['Vraag3'])) {
+		  $errors['Vraag3'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		if (empty($_POST['Vraag4'])) {
+		  $errors['Vraag4'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		if (empty($_POST['Vraag5'])) {
+		  $errors['Vraag5'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		if (empty($_POST['Vraag6'])) {
+		  $errors['Vraag6'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		if (empty($_POST['Vraag7'])) {
+		  $errors['Vraag7'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		if (empty($_POST['Vraag8'])) {
+		  $errors['Vraag8'] = "Je moet deze vraag beantwoorden.";
+		}
+		
+		// If there are no errors, redirect to the success page
+		if (empty($errors)) {
+		  header('Location: PaniekResultaat.php');
+		  exit();
+		}
+		
 
      
         echo "Er heerst paniek in het koninkrijk $Vraag3. Koning $Vraag6 is ten einde raad en als koning $Vraag6 ten einde raad is, dan roept hij zijn ten-einde-raadsheer Spinoza.<br>";

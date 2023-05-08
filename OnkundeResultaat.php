@@ -8,16 +8,24 @@
 <body>
     <?php
     
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-       
-        $Vraag1 = $_POST['Vraag1'];
-        $Vraag2 = $_POST['Vraag2'];
-        $Vraag3 = $_POST['Vraag3'];
-        $Vraag4 = $_POST['Vraag4'];
-        $Vraag5 = $_POST['Vraag5'];
-        $Vraag6 = $_POST['Vraag6'];
-        $Vraag7 = $_POST['Vraag7'];
-        $Vraag8 = $_POST['Vraag8'];
+    $Vraag1 = "";
+    $Vraag2 = "";
+    $Vraag3 = "";
+    $Vraag4 = "";
+    $Vraag5 = "";
+    $Vraag6 = "";
+    $Vraag7 = "";
+    $Vraag8 = "";
+
+    // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //     for($i = 1; $i <= 8; $i++){
+    //     if (empty($_POST["Vraag" . $i])) {
+    //           $Vraag[$i] = "Naam is verplicht";
+    //       } else {
+    //         $Vraag[$i] = $_POST["Vraag" . $i];
+    //       }
+    //     }
+    // }
 
      
         echo "Er heerst paniek in het koninkrijk $Vraag3. Koning $Vraag6 is ten einde raad en als koning $Vraag6 ten einde raad is, dan roept hij zijn ten-einde-raadsheer Spinoza.<br>";
@@ -30,7 +38,7 @@
         echo "Maar Sire, daar kunt u toch uw $Vraag7 voor gebruiken.<br>";
         echo "$Vraag2, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had.<br>";
         echo "$Vraag4, Sire.<br>";
-    } 
+     
     ?>
 </body>
 </html>
