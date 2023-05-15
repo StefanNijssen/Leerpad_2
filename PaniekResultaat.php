@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paniek Resultaat</title>
+	<nav>
+        <a href="Onkunde.php"><button class="NavButton">Onkunde</button></a>
+        <a href="Paniek.php"><button class="NavButton">Er heerst paniek!</button></a>
+    </nav> 
 </head>
 <body>
     <?php

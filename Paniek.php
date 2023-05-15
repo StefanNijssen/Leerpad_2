@@ -72,7 +72,7 @@ function test_input($data) {
     return $data;
 }
 ?>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+    <form method="post" id="myForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
     
         <h1>Er heerst paniek!</h1>
         <!-- Formuliervelden hier -->
@@ -99,6 +99,13 @@ function test_input($data) {
     
     if ($Vraag1 && $Vraag2 && $Vraag3 && $Vraag4 && $Vraag5 && $Vraag6 && $Vraag7 && $Vraag8 != ""){
         ob_clean();
+        ?>
+        <nav>
+            <a href="Onkunde.php"><button class="NavButton">Onkunde</button></a>
+            <a href="Paniek.php"><button class="NavButton">Er heerst paniek!</button></a>
+        </nav> 
+        <?php
+        
         echo "Er heerst paniek in het koninkrijk $Vraag3. Koning $Vraag6 is ten einde raad en als koning $Vraag6 ten einde raad is, dan roept hij zijn ten-einde-raadsheer Spinoza.<br>";
         echo "$Vraag2! Het is een ramp! Het is een schande!<br>";
         echo "Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?<br>";
