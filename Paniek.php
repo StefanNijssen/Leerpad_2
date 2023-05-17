@@ -75,7 +75,6 @@ function test_input($data) {
     <form method="post" id="myForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
     
         <h1>Er heerst paniek!</h1>
-        <!-- Formuliervelden hier -->
       
     <h5>Welk dier zou je nooit als huisdier willen hebben? <input type="text" name="Vraag1"">
     <span>*<?php echo $Vraag1_error;?></span><br>

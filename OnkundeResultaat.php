@@ -4,30 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paniek Resultaat</title>
+	<nav>
+        <a href="Onkunde.php"><button class="NavButton">Onkunde</button></a>
+        <a href="Paniek.php"><button class="NavButton">Er heerst paniek!</button></a>
+    </nav> 
 </head>
 <body>
     <?php
-    
-    $Vraag1 = "";
-    $Vraag2 = "";
-    $Vraag3 = "";
-    $Vraag4 = "";
-    $Vraag5 = "";
-    $Vraag6 = "";
-    $Vraag7 = "";
-    $Vraag8 = "";
-
-    // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    //     for($i = 1; $i <= 8; $i++){
-    //     if (empty($_POST["Vraag" . $i])) {
-    //           $Vraag[$i] = "Naam is verplicht";
-    //       } else {
-    //         $Vraag[$i] = $_POST["Vraag" . $i];
-    //       }
-    //     }
-    // }
-
-     
+	  
         echo "Er heerst paniek in het koninkrijk $Vraag3. Koning $Vraag6 is ten einde raad en als koning $Vraag6 ten einde raad is, dan roept hij zijn ten-einde-raadsheer Spinoza.<br>";
         echo "$Vraag2! Het is een ramp! Het is een schande!<br>";
 		echo "Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?<br>";
@@ -38,7 +22,7 @@
         echo "Maar Sire, daar kunt u toch uw $Vraag7 voor gebruiken.<br>";
         echo "$Vraag2, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had.<br>";
         echo "$Vraag4, Sire.<br>";
-     
+    
     ?>
 </body>
 </html>
